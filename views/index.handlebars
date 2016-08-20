@@ -1,0 +1,52 @@
+<body>
+	<body background="http://s3.amazonaws.com/spoonflower/public/design_thumbnails/0002/7185/rrburger_and_fries_spoonflower_1_shop_preview.png">
+
+<div class = "text-center">
+	<h1>"Eat Da Burger!" App</h1>
+
+<img src="http://rivista-cdn.delawaretoday.com/Delaware-Today/May-2013/Conquering-the-Food-Beast-Jakes-Triple-Triple-Burger/FinalWordBurger.jpg?ver=1365523565" alt="BurgerPic">
+<br>
+</div>
+
+<div class = "row">
+	<div class="col-xs-6 col-sm-4">
+	</div>
+	<div class="col-xs-6 col-sm-3">
+		<h2>Choose Your Burger!</h2>
+		{{#each burgers}}
+			{{#unless this.devoured}}
+				<p class="alert alert-danger" style="width: 40%">
+					{{this.id}}. {{this.burger_name}}
+					<form id="devourBurger" action="/update?_method=PUT" method="POST">
+						<input type="hidden" name="id" value="{{this.id}}">
+						<button type="submit" class="btn btn-warning" id="eatBurger">It's Munching Time!</button>
+					</form>
+				</p>
+			{{/unless}}
+		{{/each}}
+	</div>
+	<div class="col-xs-6 col-sm-3">
+		<h2>Yum!</h2>
+		{{#each burgers}}
+			{{#if this.devoured}}
+				<p class="alert alert-info" style="width: 40%">
+					{{this.id}}. {{this.burger_name}}
+				</p>
+			{{/if}}
+		{{/each}}
+	</div>
+	<div class="col-xs-6 col-sm-3">
+	</div>
+</div>
+
+<div class = "row text-center">
+	<h2>Create Your Own Burger!</h2>
+	<form method="POST" action="/create" class="button-size">
+		<textarea type="text" name="burger_name"></textarea>
+		<br>
+		<button type="submit">DELICIOUS!</button>
+	</form>
+</div>
+</body>
+
+

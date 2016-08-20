@@ -1,0 +1,71 @@
+img {
+  display: block;
+  text-align: center;
+  margin: auto;
+  width: 250px;
+  height: 200px;
+}
+
+h1 {
+    font-family: arial black;
+}
+
+h2 {
+  font-family: arial black;
+}
+
+li {
+  height: 75px;
+  background: yellow;
+  margin: 5px;
+  padding: 5px;
+  font-weight: bolder;
+  font-family: arial black;
+}
+
+.label {
+  font-weight: bolder;
+  font-family: arial black;
+}
+
+.create-update-form {
+  font-weight: bolder;
+  font-family: arial black;
+  text-align: center;
+  background: transparent;
+  margin: 2px;
+  padding: 5px;
+}
+
+.form-group {
+  font-weight: bolder;
+  font-family: arial black;
+  margin-bottom: 30px;
+}
+
+.jumbotron {
+	text-align: center;
+}
+
+.not-devoured {
+  width: 60%;
+	float: left;
+}
+
+.devoured {
+  width: 40%;
+	float: right;
+}
+
+.burger-name {
+  overflow: auto;
+  margin-top: 10px;
+  font-weight: bolder;
+}
+
+.burger-button {
+  line-height: 10px;
+  width: 110px;
+  margin-left: 140px;
+
+}

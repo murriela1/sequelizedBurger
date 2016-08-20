@@ -1,0 +1,31 @@
+{
+  "name": "sequelizedburger",
+  "version": "1.0.0",
+  "description": "sequelized eat-da-burger",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/murriela1/sequelizedBurger.git"
+  },
+  "author": "Andrew Murriel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/murriela1/sequelizedBurger/issues"
+  },
+  "homepage": "https://github.com/murriela1/sequelizedBurger#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "express-handlebars": "^3.0.0",
+    "method-override": "^2.3.6",
+    "mysql": "^2.11.1",
+    "sequelize": "^3.24.0"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^2.4.0"
+  }
+}
